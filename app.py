@@ -22,7 +22,7 @@ def create_workouts():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS workouts (
             id SERIAL PRIMARY KEY,
-            user_id INTEGER REFERENCES users(id),
+            -- user_id INTEGER REFERENCES users(id),
             date TIMESTAMP,
             exercise_name VARCHAR,
             duration INTERVAL,
@@ -100,7 +100,7 @@ def recreateTable():
     cursor.execute('''
         CREATE TABLE workouts (
             id SERIAL PRIMARY KEY,
-            user_id INTEGER REFERENCES users(id),
+            -- user_id INTEGER REFERENCES users(id),
             date TIMESTAMP,
             exercise_name VARCHAR,
             duration INTERVAL,
