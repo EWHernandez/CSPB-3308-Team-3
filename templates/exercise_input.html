@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Tracker</title>
+
+    <link rel="stylesheet" href="/static/exercise_input.css" />
+
+    <script type="text/javascript" src="/static/exercise_input.js" defer></script>
+
+
+</head>
+
+<body onload="Javascript:populate_table()">
+    <!--Navigation menu-->
+    <div id="Navbar">
+        <ul>
+            <li><a href="/templates/login.html">Login Page</a></li>
+            <li><a href="/templates/create_account.html">Create Account</a></li>
+            <li><a href="/templates/index.html">Calorie Input</a></li>
+            <li><a href="/templates/foodlookup.html">Food Lookup</a></li>
+            <li><a href="/templates/exercise_log.html">Log Exercises</a></li>
+        </ul>
+    </div>
+    <!--END MENU-->
+    <br>
+
+    <div id="imagefield">
+        <img src="/static/exercise1.jpg" alt="girl exercising" class="center">
+    </div>
+    
+    <br>
+    
+    <div id="inputhead">
+        <h2>Enter your exercise stats here</h2>
+    </div>
+    
+    <div id="inputform">
+        <form action ="/testinput" method="POST">
+        <ul>
+        <!--Using entry form. would like vertical button selectors in future-->
+            <li>    
+                <label for="dateinput">Date of Workout</label>
+                <input type="date" name="dateinput" id="dateinput"  required>
+            </li>
+            <li>    
+                <label for="exercise_name">Exercise</label>
+                <input type="text" id="exercise_name" name="exercise_name" required>
+            </li>
+        <!--exercise entry box. start rudimentry support string input. down the road(maybe) auto-complete exercise name-->
+            <li>
+                <label for="exercise_type">Type of Exercise</label>
+                <input type="text" id="exercise_type" name="exercise_type" required>
+            </li>
+        <!-- exercise duration entry box. Supports integer input  -->
+            <li>
+                <label for="exercise_minute">Exercise Duration</label>
+                <input type="number" id="exercise_minute" name="exercise_minute" required>
+            </li>
+        <!--Section for notes for workout.-->
+            <li id="notes">
+                <p><label for="exercise_notes">Notes about workout</label></p>
+                <textarea id="exercise_notes" name="exercise_notes" rows="5" cols="50"></textarea>
+            </li>
+        </ul>
+        <!--Form submit button for all data entered above-->
+        <div id="dataSubmit">
+            <input type="submit" value="Submit!">
+            </div>
+        </form>
+    </div>
+    <br>
+    
+<!--Create a table that will fill with the data collected above. The table should fill rows in at every submit click of the entire data entry area.-->
+    <div id="output_tb">   
+        <table id="output_table">
+            <tr>
+                <th>Date</th>
+                <th>Exercise Name</th>
+                <th>Type of Exercise</th>
+                <th>Exercise Duration</th>
+                <th>Notes</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>       

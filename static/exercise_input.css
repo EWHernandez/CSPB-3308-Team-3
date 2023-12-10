@@ -1,0 +1,71 @@
+/*----NAV BAR----*/
+#Navbar {
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#Navbar li{
+    display:inline;
+    border:rgb(from color r g b);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#Navbar a {
+    display:inline-block; 
+}
+
+#datefield {
+    text-align: center;
+    font-size: x-large
+}
+
+#inputhead {
+    text-align: center;
+}
+
+#imagefield {
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#inputform {
+    width: max-content;
+    background-color: aqua;
+    padding-top: 10px;
+    border: 1px solid black;    
+    text-align: center;
+    margin: auto;
+}
+
+#inputform li{
+    display: contents;
+    align-content: stretch;
+
+}
+
+#output_tb {
+    border: 1px solid black;
+    width: max-content;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
