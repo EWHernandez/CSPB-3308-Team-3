@@ -1,4 +1,5 @@
 import psycopg2 as pg
+import database as db
 import create_exercise_input_db as ceid
 
 from flask import Flask
